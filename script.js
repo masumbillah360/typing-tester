@@ -46,6 +46,8 @@ const typeController = (e) => {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
+    errorCount++;
+    console.log(errorCount, "text")
   }
 
   // check if given question text is equal to user typed text
@@ -68,8 +70,6 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   const timeTaken = Math.floor((finishTime - startTime) / 1000);
-  console.log(timeTaken)
-
   // show result modal
   resultModal.innerHTML = "";
   resultModal.classList.toggle("hidden");
