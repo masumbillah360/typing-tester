@@ -17,7 +17,7 @@ body {
 }
 
 #question {
-  height: 100px;
+  min-height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +32,7 @@ body {
   );
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
+  padding: 10px;
 }
 
 #display {
@@ -39,7 +40,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 5rem;
+  padding: 0rem 1rem;
   color: white;
   font-size: 32px;
   background-color: #171717;
@@ -143,7 +144,6 @@ button {
 
 #histories {
   display: grid;
-  /* flex-wrap: wrap; */
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   justify-content: space-between;
@@ -195,7 +195,6 @@ button {
     grid-template-columns: 1fr;
   }
   #display{
-    /* height: auto; */
     padding:5px 10px;
   }
 }
