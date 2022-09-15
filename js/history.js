@@ -2,7 +2,6 @@ const histories = document.getElementById("histories");
 
 function addHistory(questionText, timeTaken, speedCount, errorCount) {
   const newRow = document.createElement("div");
-  console.log(Math.round((questionText.length/timeTaken)*60))
   newRow.classList.add("card");
   newRow.innerHTML = `
   <div>
