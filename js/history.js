@@ -5,7 +5,7 @@ function addHistory(questionText, timeTaken, speedCount, errorCount) {
   newRow.classList.add("card");
   newRow.innerHTML = `
   <div>
-    <h3>${questionText}</h3>
+    <h3 class="title">${questionText}</h3>
     <div>
       <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
       <p>Your Speed: <span class="bold">${speedCount}</span> CPM</p>
@@ -31,7 +31,7 @@ function displayHistory() {
     const newRow = document.createElement("div");
     newRow.classList.add("card");
     newRow.innerHTML = `
-    <h3>${test.questionText}</h3>
+    <h3 class = "title">${test.questionText}</h3>
     <p>You took: <span class="bold">${test.timeTaken}</span> seconds</p>
     <p>Your Speed: <span class="bold">${test.speedCount}</span> CPM</p>
     <p>You made <span class="bold red">${test.errorCount}</span> mistakes</p>
