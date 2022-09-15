@@ -18,9 +18,9 @@
                             alt="Bootstrap Themes"loading="lazy">
                     </div>
                     <div class="col-lg-6">
-                        <h1 class="fs-1 fw-bold lh-1 mb-3">What is Local Storage and Seassion Storage </h1>
-                        <p class="lead"><span class="fw-bold">Local Storage</span> : LocalStorage - stores data with no expiration date. It Works only inside of Browser. It's capecity up to 10 MB.<br></p>
-                        <p class="lead"><span class="fw-bold">Seassion Storage</span> : Data in sessionStorage is cleared when the page session ends or page closed. It's also works only inside of Browser.</p>
+                        <h2 class="fw-bold lh-1 mb-3">Differance between Local Storage and Seassion Storage </h2>
+                        <p class="lead"><span class="fw-bold">Local Storage</span> : LocalStorage - stores data with no expiration date. It Works only inside of Browser. It's capecity up to 10 MB.<br>The data will not be deleted when the browser is closed, and will be available the next day, week, or year.</p>
+                        <p class="lead"><span class="fw-bold">Seassion Storage</span> : Data in sessionStorage is cleared when the page session ends or page closed. It's also works only inside of Browser.The data is deleted when the user closes the specific browser tab.</p>
                     </div>
                 </div>
             </article>
@@ -31,8 +31,8 @@
                             alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                     </div>
                     <div class="col-lg-6">
-                        <h1 class="fs-1 fw-bold lh-1 mb-3">Local Scope vs Global Scope</h1>
-                        <p class="lead">Scope in JavaScript refers to the current context of code, which determines the accessibility of variables to JavaScript. The two types of scope are local and global: Global variables are those declared outside of a block. Local variables are those declared inside of a block</p>
+                        <h1 class="fs-1 fw-bold lh-1 mb-3">Differance between Local Scope and Global Scope</h1>
+                        <p class="lead">Scope in JavaScript refers to the current context of code, which determines the accessibility of variables to JavaScript. The two types of scope are local and global: Global variables are those declared outside of a block and it's use everywhere. Local variables are those declared inside of a block and it's use only inside of class, function's like block. If you call the variable outside of block you got undefined.</p>
                     </div>
                 </div>
             </article>
@@ -58,13 +58,17 @@
                             width="700" height="500" loading="lazy">
                     </div>
                     <div class="col-lg-6">
-                        <h1 class="fs-1 fw-bold lh-1 mb-3">How many way to get <cite>"undefined"</cite> in JavaScript</h1>
-                        <p class="lead"> "undefined" is a property of the global object. That is, it is a variable in global scope. The initial value of undefined is the primitive value undefined.
-
-                            In all non-legacy browsers, undefined is a non-configurable, non-writable property. (Even when this is not the case, avoid overriding it.)
-                            
-                            A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned. </p>
-                    </div>
+                        <h3 class="fw-bold lh-1 mb-3">How many way to get <cite>"undefined"</cite> in JavaScript</h3>
+                        <p class="lead">
+                            <p>1. Uninitialized variable : A declared variable but not yet assigned with a value (uninitialized) is by default undefined.</p>
+                            <p>2. Function with no return : A function that doesn't have return statement implicitly returns undefined</p>
+                            <p>3. Function parameters : Perameter that is not passed will be undefined.</p>
+                            <p>4. If return has nothing on the right side will be return undefined.</p>
+                            <p>5. Accessing a non-existing property : When accessing a non-existing object property, JavaScript returns undefined.</p>
+                            <p>6. undefined in arrays : You get undefined when accessing an array element with an out of bounds index.</p>
+                            <p>7. Deleting an element inside of array they return and undefined for deleted element</p>
+                            <p>8. If you set a value directly "undefined" you got undefined</p>
+                        </div>
                 </div>
             </article>
         </section>
